@@ -97,3 +97,22 @@ Je begint dus nooit opnieuw. Elke opdracht bouwt verder op de vorige.
 Je hebt hem gemaakt vanaf het sjabloon, dus dit is jouw kopie. Werk erin, commit
 elke les, en push. Indienen doe je met de link naar een commit. Hoe dat precies
 gaat, staat in de opdrachtbundel op Toledo.
+
+## Hoe start je de container op?
+
+Zorg ervoor dat je docker desktop hebt, geïnstalleerd en actief. https://www.docker.com/products/docker-desktop/
+Open een terminal en voer de volgende commando's uit: 
+1. git clone https://github.com/koennoeth/cloud-computing.git
+2. cd cloud-computing
+3. cp .env.example .env
+4. Open het .env bestand en vul een wachtwoord in. 
+
+Nu kan je de applicatie beginnen opstarten. Aan de hand van de volgende stappen. 
+1. docker compose up --build -d 
+Controleer of de containers draaien.
+2. docker compose ps 
+Logs kan je nakijken indine nodig.
+3. docker compose logs -f
+
+Je zou nu de applicatie moeten kunnen openen in je browser met volgende url: http://localhost:8000.
+
